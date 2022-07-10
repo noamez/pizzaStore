@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Napolitena",
+    "description": "Mediterrenian Pizza",
+    "toppings": ["eggplant","olives"],
+    "price": 60,
+    "image": "https://www.image.com/napolitena.jpg"
+  },
+  {
+    "name": "Hawai",
+    "description": "Islands Lover Pizza",
+    "toppings": ["pineapple","chilli"],
+    "price": 70,
+    "image": "https://www.image.com/napolitena.jpg"
+  }
+]
