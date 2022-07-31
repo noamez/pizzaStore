@@ -14,7 +14,6 @@ function Menu(props) {
       .then((res) => res.json())
       .then((pizzasResponse) => {
         setPizzas(pizzasResponse);
-        setfiltered(pizzasResponse);
       });
   }, [pizzas]);
 
@@ -37,7 +36,7 @@ function Menu(props) {
         setpizzaOption={setpizzaOption}
       />
       <Row xs={2} md={3} lg={4}>
-        {pizzas.map((pizza) => {
+        {filtered.map((pizza) => {
           return <PizzaBox pizza={pizza} onAdd={onAdd} />;
         })}
       </Row>

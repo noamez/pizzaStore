@@ -10,7 +10,7 @@ function Filter({ setpizzaOption, pizzaOption, pizzas, setfiltered }) {
       pizza.genre_ids.includes(pizzaOption)
     );
     setfiltered(filtered);
-  }, [pizzaOption]);
+  }, [pizzaOption, pizzas]);
 
   return (
     <div className="filter-container">
@@ -48,7 +48,7 @@ function Filter({ setpizzaOption, pizzaOption, pizzas, setfiltered }) {
           color: "blue",
           borderColor: "blue",
         }}
-        onClick={() => setpizzaOption(9)}
+        onClick={() => setpizzaOption(2)}
       >
         Drinks
       </button>

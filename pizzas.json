@@ -5,7 +5,9 @@
     "description": "Italian Pizza",
     "toppings": ["eggplant"," olives", " Basil leaves"],
     "price": 20,
-    "image": "images/olive-pizza.jpg"
+    "image": "images/olive-pizza.jpg",
+    "genre_ids": [1]
+    
   },
   {
     "id": "2",
@@ -13,7 +15,8 @@
     "description": "Greek Pizza",
     "toppings": ["bulgarian cheese","&onion"],
     "price": 18,
-    "image": "images/greek.jpg" 
+    "image": "images/greek.jpg",
+    "genre_ids": [1]
   },
   {
     "id": "3",
@@ -21,7 +24,8 @@
     "description": "A mediterranean Pizza",
     "toppings": ["Hot pepper", " chilli"],
     "price": 26,
-    "image": "images/pizza.jpg"
+    "image": "images/pizza.jpg",
+    "genre_ids": [1]
   },
   {
     "id": "4",
@@ -29,7 +33,8 @@
     "description": "Mexican Pizza",
     "toppings": ["pepperoni"," chimichori"],
     "price": 13,
-    "image": "images/mexican.jpg"
+    "image": "images/mexican.jpg",
+    "genre_ids": [1]
   },
   {
     "id": "5",
@@ -37,7 +42,8 @@
     "description": "Islands Lover Pizza",
     "toppings": ["pineapple","&meat"],
     "price": 25,
-    "image": "images/hawai.jpg"
+    "image": "images/hawai.jpg",
+    "genre_ids": [1]
   },
   {
     "id": "6",
@@ -45,7 +51,8 @@
     "description": "Parmesan cheese",
     "toppings": ["Broccoli"," Beets& ","sweet potatoes"],
     "price": 33,
-    "image": "images/vegetarian.jpg"
+    "image": "images/vegetarian.jpg",
+    "genre_ids": [1]
   },
   {
     "id": "7",
@@ -53,7 +60,8 @@
     "description": "A special Pizza with",
     "toppings": ["pesto"," Parmesan ","Mozzarella" , " Ricotta"],
     "price": 36,
-    "image": "images/pesto.jpg"
+    "image": "images/pesto.jpg",
+    "genre_ids": [1]
   },
   {
     "id": "8",
@@ -61,34 +69,39 @@
     "description": "Our special Garlic Bread with",
     "toppings": [" butter", " &olive oil"],
      "price": 10,
-    "image": "images/Garlic-bread.jpg"
+    "image": "images/Garlic-bread.jpg",
+    "genre_ids": [1]
   },
   {
     "id": "9",
     "name": "Coca cola",
     "description": "Select your Drink - A cold and fresh cola",
     "price":3,
-    "image": "https://alcohol123.co.il/wp-content/uploads/2020/03/%D7%A7%D7%95%D7%9C%D7%94-%D7%A8%D7%92%D7%99%D7%9C%D7%94-3%D7%96%D7%9B%D7%95%D7%9B%D7%99%D7%AA.jpg"
+    "image": "https://alcohol123.co.il/wp-content/uploads/2020/03/%D7%A7%D7%95%D7%9C%D7%94-%D7%A8%D7%92%D7%99%D7%9C%D7%94-3%D7%96%D7%9B%D7%95%D7%9B%D7%99%D7%AA.jpg",
+    "genre_ids": [2]
   },
   {
     "id": "10",
     "name": "Coca cola zero",
     "description": "Select your Drink - cola with Zero sugar",
     "price":4,
-    "image": "https://orders.sushimoto.co.il/wp-content/uploads/2020/02/%D7%A7%D7%95%D7%9C%D7%94-%D7%96%D7%99%D7%A8%D7%95-%D7%A7%D7%9C%D7%90%D7%A1%D7%99-%D7%96%D7%9B%D7%95%D7%9B%D7%99%D7%AA.png"
+    "image": "https://orders.sushimoto.co.il/wp-content/uploads/2020/02/%D7%A7%D7%95%D7%9C%D7%94-%D7%96%D7%99%D7%A8%D7%95-%D7%A7%D7%9C%D7%90%D7%A1%D7%99-%D7%96%D7%9B%D7%95%D7%9B%D7%99%D7%AA.png",
+    "genre_ids": [2]
   },
   {
     "id": "11",
     "name": "Fuze tea",
     "description": "Select your Drink- Mango and pineapple ",
     "price":5,
-    "image": "https://m.pricez.co.il/ProductPictures/7290110115449.jpg"
+    "image": "https://m.pricez.co.il/ProductPictures/7290110115449.jpg",
+    "genre_ids": [2]
   },
   {
     "id": "12",
     "name": "Water",
     "description": "Select your Drink- san benedetto water",
     "price":2,
-    "image": "https://italco.com/wp-content/uploads/2020/01/65SBPET.jpg"
+    "image": "https://italco.com/wp-content/uploads/2020/01/65SBPET.jpg",
+    "genre_ids": [2]
   }
 ]
