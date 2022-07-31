@@ -4,6 +4,7 @@ import { Button, Card, Col } from "react-bootstrap";
 function PizzaBox(props) {
   const { pizza } = props;
   const { onAdd } = props;
+  console.log(onAdd);
 
   return (
     <Col>
