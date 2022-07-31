@@ -1,38 +1,75 @@
-import React, { useEffect, useState } from "react";
-import { Container, Row } from "react-bootstrap";
+import React, { useState } from "react";
+import Menu from "./components/Menu/Menu";
 import Header from "./components/Header/Header";
-import PizzaBox from "./components/PizzaBox/PizzaBox";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import ContactUs from "./components/ContactUs/ContactUs";
+import AboutUs from "./components/AboutUs/AboutUs";
+import Branches from "./components/Branches/Branches";
+import JoinUs from "./components/JoinUs/JoinUs";
 
 function App() {
-  const [pizzas, setPizzas] = useState([]);
+  const [cartItems, setCartItems] = useState([]);
 
-  useEffect(() => {
-    fetch("/pizzas")
-      .then((res) => res.json())
-      .then((pizzasResponse) => setPizzas(pizzasResponse));
-  }, []);
+  const onAdd = (product) => {
+    const exist = cartItems.find((x) => x.id === product.id);
+    if (exist) {
+      setCartItems(
+        cartItems.map((x) =>
+          x.id === product.id ? { ...exist, qty: exist.qty + 1 } : x
+        )
+      );
+    } else {
+      setCartItems([...cartItems, { ...product, qty: 1 }]);
+    }
+  };
+  const onRemove = (product) => {
+    const exist = cartItems.find((x) => x.id === product.id);
+    if (exist.qty === 1) {
+      setCartItems(cartItems.filter((x) => x.id !== product.id));
+    } else {
+      setCartItems(
+        cartItems.map((x) =>
+          x.id === product.id ? { ...exist, qty: exist.qty - 1 } : x
+        )
+      );
+    }
+  };
 
   return (
     <div>
-      <Header />
-
-      <Container className="mt-1">
-        <center>
-          <img
-            alt=""
-            src="images/menu.jpg"
-            width="130"
-            height="130"
-            className="d-inline-block align-top"
-            justifycontent="center"
-          />
-        </center>
-        <Row xs={2} md={3} lg={4}>
-          {pizzas.map((pizza) => {
-            return <PizzaBox pizza={pizza} />;
-          })}
-        </Row>
-      </Container>
+      <Router>
+        <Header cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} />
+        <Switch>
+          <Route exact path="/">
+            {" "}
+            <Menu onAdd={onAdd} />
+          </Route>
+          <Route exact path="/Menu">
+            {" "}
+            <Menu />
+          </Route>
+          <Route path="/Menu">
+            {" "}
+            <Menu onAdd={onAdd} />
+          </Route>
+          <Route path="/AboutUs">
+            {" "}
+            <AboutUs />
+          </Route>
+          <Route path="/ContactUs">
+            {" "}
+            <ContactUs />
+          </Route>
+          <Route path="/Branches">
+            {" "}
+            <Branches />
+          </Route>
+          <Route path="/JoinUs">
+            {" "}
+            <JoinUs />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }

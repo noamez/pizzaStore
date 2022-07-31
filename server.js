@@ -2,6 +2,7 @@ const express = require("express");
 const path = require("path");
 const bodyParser = require("body-parser");
 const pizzas = require("./pizzas.json");
+const branches = require("./Branches.json");
 const app = express();
 const port = process.env.PORT || 5000;
 
@@ -16,5 +17,7 @@ app.get("/api/hello", (req, res) => {
 app.get("/pizzas", (req, res) => {
   res.json(pizzas);
 });
-
+app.get("/branches", (req, res) => {
+  res.json(branches);
+});
 app.listen(port, () => console.log(`Listening on port ${port}`));

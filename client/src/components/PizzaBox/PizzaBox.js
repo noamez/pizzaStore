@@ -1,13 +1,14 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Button, Card, Col } from "react-bootstrap";
 
-function PizzaBox(pizza) {
-  const currentPizza = pizza.pizza;
+function PizzaBox(props) {
+  const { pizza } = props;
+  const { onAdd } = props;
 
   return (
     <Col>
       <Card
-        key={currentPizza.name}
+        key={pizza.id}
         style={{
           width: "18rem",
           height: "29rem",
@@ -15,24 +16,25 @@ function PizzaBox(pizza) {
         }}
       >
         <Card.Img
-          src={currentPizza.image}
+          src={pizza.image}
           style={{
             width: "18rem",
             height: "18rem",
           }}
         />
         <Card.Body>
-          <Card.Title>{currentPizza.name}</Card.Title>
+          <Card.Title>{pizza.name}</Card.Title>
           <Card.Text>
-            {currentPizza.description}
+            {pizza.description}
             {"\n"}
-            {currentPizza.toppings}
+            {pizza.toppings}
             {"\n"}
           </Card.Text>
           Price:
-          {currentPizza.price}
-          {"\n"}
-          <Button variant="primary">Add to cart</Button>
+          {pizza.price}${"\n"}
+          <Button variant="primary" onClick={() => onAdd(pizza)}>
+            Add to cart
+          </Button>
         </Card.Body>
       </Card>
     </Col>
