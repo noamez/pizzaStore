@@ -1,16 +1,82 @@
 [
   {
     "name": "Napolitena",
-    "description": "Mediterrenian Pizza",
-    "toppings": ["eggplant","olives"],
-    "price": 60,
-    "image": "https://www.image.com/napolitena.jpg"
+    "description": "Italian Pizza",
+    "toppings": ["eggplant"," olives", " Basil leaves"],
+    "price": "20$",
+    "image": "images/olive-pizza.jpg"
+  },
+  {
+    "name": "Greek",
+    "description": "Greek Pizza",
+    "toppings": ["bulgarian cheese","&onion"],
+    "price": "18$",
+    "image": "images/greek.jpg" 
+  },
+  {
+    "name": "Israeli",
+    "description": "A mediterranean Pizza",
+    "toppings": ["Hot pepper", " chilli"],
+    "price": "26$",
+    "image": "images/pizza.jpg"
+  },
+  {
+    "name": "Mexican",
+    "description": "Mexican Pizza",
+    "toppings": ["pepperoni"," chimichori"],
+    "price": "13$",
+    "image": "images/mexican.jpg"
   },
   {
     "name": "Hawai",
     "description": "Islands Lover Pizza",
-    "toppings": ["pineapple","chilli"],
-    "price": 70,
-    "image": "https://www.image.com/napolitena.jpg"
+    "toppings": ["pineapple","&meat"],
+    "price": "25$",
+    "image": "images/hawai.jpg"
+  },
+  {
+    "name": "Vegetarian Pizza",
+    "description": "Parmesan cheese",
+    "toppings": ["Broccoli"," Beets& ","sweet potatoes"],
+    "price": "33$",
+    "image": "images/vegetarian.jpg"
+  },
+  {
+    "name": "Pesto pizza and 3 cheeses",
+    "description": "A special Pizza with",
+    "toppings": ["pesto"," Parmesan ","Mozzarella" , " Ricotta"],
+    "price": "36$",
+    "image": "images/pesto.jpg"
+  },
+  {
+    "name": "Garlic bread",
+    "description": "Our special Garlic Bread with",
+    "toppings": [" butter", " &olive oil"],
+     "price": "10$",
+    "image": "images/Garlic-bread.jpg"
+  },
+  {
+    "name": "Coca cola",
+    "description": "Select your Drink - A cold and fresh cola",
+    "price": "3$",
+    "image": "https://alcohol123.co.il/wp-content/uploads/2020/03/%D7%A7%D7%95%D7%9C%D7%94-%D7%A8%D7%92%D7%99%D7%9C%D7%94-3%D7%96%D7%9B%D7%95%D7%9B%D7%99%D7%AA.jpg"
+  },
+  {
+    "name": "Coca cola zero",
+    "description": "Select your Drink - cola with Zero sugar",
+    "price": "4$",
+    "image": "https://orders.sushimoto.co.il/wp-content/uploads/2020/02/%D7%A7%D7%95%D7%9C%D7%94-%D7%96%D7%99%D7%A8%D7%95-%D7%A7%D7%9C%D7%90%D7%A1%D7%99-%D7%96%D7%9B%D7%95%D7%9B%D7%99%D7%AA.png"
+  },
+  {
+    "name": "Fuze tea",
+    "description": "Select your Drink- Mango and pineapple ",
+    "price": "5$",
+    "image": "https://m.pricez.co.il/ProductPictures/7290110115449.jpg"
+  },
+  {
+    "name": "Water",
+    "description": "Select your Drink- san benedetto water",
+    "price": "2$",
+    "image": "https://italco.com/wp-content/uploads/2020/01/65SBPET.jpg"
   }
 ]
