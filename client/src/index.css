@@ -1,5 +1,47 @@
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
 }
+.pizza-card{
+  width: 18rem;
+ height: 29rem;
+ display: flex;
+}
+.card-image{
+  width: 18rem;
+  height: 29rem;
+  display: flex;
+}
+.filter-container{
+  width: 35px;
+  height: 35px;
+  background: red;
+  color: white;
+  border-Color: black;
+
+}
+.filter-Buttom{
+  width: 70px;
+  height: 35px;
+  background: red;
+  color: white;
+  border-Color: black;
+}
+.contact-image{
+  width: 55rem;
+  height: 25rem;
+}
+.about-image{
+  width: 50rem;
+  height: 19rem;
+}
+.Home{
+  background: red;
+  max-height: 100px;
+  height: 50px;
+  display: flex;
+  font-weight: 200;
+}
+

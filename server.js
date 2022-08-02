@@ -1,7 +1,7 @@
 const express = require("express");
 const path = require("path");
 const bodyParser = require("body-parser");
-const pizzas = require("./pizzas.json");
+const pizzas = require("./products.json");
 const branches = require("./Branches.json");
 const app = express();
 const port = process.env.PORT || 5000;
@@ -14,7 +14,7 @@ app.get("/api/hello", (req, res) => {
   res.send({ express: "Hello From Express" });
 });
 
-app.get("/pizzas", (req, res) => {
+app.get("/products", (req, res) => {
   res.json(pizzas);
 });
 app.get("/branches", (req, res) => {

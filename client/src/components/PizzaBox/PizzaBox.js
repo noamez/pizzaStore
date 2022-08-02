@@ -4,32 +4,17 @@ import { Button, Card, Col } from "react-bootstrap";
 function PizzaBox(props) {
   const { pizza } = props;
   const { onAdd } = props;
-  console.log(onAdd);
 
   return (
     <Col>
-      <Card
-        key={pizza.id}
-        style={{
-          width: "18rem",
-          height: "29rem",
-          display: "flex",
-        }}
-      >
-        <Card.Img
-          src={pizza.image}
-          style={{
-            width: "18rem",
-            height: "18rem",
-          }}
-        />
+      <Card className="mt-3 pizza-card" key={pizza.id}>
+        <Card.Img className="card-image" src={pizza.image} />
         <Card.Body>
           <Card.Title>{pizza.name}</Card.Title>
           <Card.Text>
             {pizza.description}
-            {"\n"}
+            <br></br>
             {pizza.toppings}
-            {"\n"}
           </Card.Text>
           Price:
           {pizza.price}${"\n"}

@@ -10,7 +10,7 @@ function Menu(props) {
   const [pizzaOption, setpizzaOption] = useState(0);
 
   useEffect(() => {
-    fetch("/pizzas")
+    fetch("/products")
       .then((res) => res.json())
       .then((pizzasResponse) => {
         setPizzas(pizzasResponse);
@@ -18,7 +18,7 @@ function Menu(props) {
   }, [pizzas]);
 
   return (
-    <Container>
+    <Container fluid>
       <center>
         <img
           alt=""
@@ -35,7 +35,7 @@ function Menu(props) {
         pizzaOption={pizzaOption}
         setpizzaOption={setpizzaOption}
       />
-      <Row xs={2} md={3} lg={4}>
+      <Row xs={1} md={3} lg={4}>
         {filtered.map((pizza) => {
           return <PizzaBox pizza={pizza} onAdd={onAdd} />;
         })}

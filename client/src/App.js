@@ -44,10 +44,7 @@ function App() {
             {" "}
             <Menu onAdd={onAdd} />
           </Route>
-          <Route exact path="/Menu">
-            {" "}
-            <Menu />
-          </Route>
+
           <Route path="/Menu">
             {" "}
             <Menu onAdd={onAdd} />

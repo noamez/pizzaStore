@@ -24,21 +24,21 @@
     "name": " Sderot Branch",
     "image": "https://media-cdn.tripadvisor.com/media/photo-s/14/69/20/39/pizzas.jpg",
 "Address": " Hertzel 39 Sderot",
-"days": " sunday - Thursday",
+"days": " monday - friday",
 "hours": " 08:30-23:00"
 },
 {"id": "5",
     "name": " Beer Sheva Branch",
     "image": "https://media-cdn.tripadvisor.com/media/photo-s/0a/23/a3/08/italia-express.jpg",
 "Address": " Gilat Center Beer Sheva",
-"days": " sunday - friday",
+"days": " sunday - saturday",
 "hours": " 07:00-22:00"
 },
 {"id": "6",
     "name": " Dimona Branch",
     "image": "https://media-cdn.tripadvisor.com/media/photo-s/17/6d/2b/c8/beer-and-pizza-one-love.jpg",
 "Address": " Damari Center",
-"days": " sunday - Thursday",
+"days": " sunday - friday",
 "hours": " 08:00-00:00"
 }
 

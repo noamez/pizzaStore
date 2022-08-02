@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Button } from "react-bootstrap";
 
 function Filter({ setpizzaOption, pizzaOption, pizzas, setfiltered }) {
   useEffect(() => {
@@ -10,48 +11,21 @@ function Filter({ setpizzaOption, pizzaOption, pizzas, setfiltered }) {
       pizza.genre_ids.includes(pizzaOption)
     );
     setfiltered(filtered);
-  }, [pizzaOption, pizzas]);
+  }, [pizzaOption, pizzas, setfiltered]);
 
   return (
-    <div className="filter-container">
-      <button
-        style={{
-          width: "35px",
-          height: "35px",
-          background: "white",
-          color: "blue",
-          borderColor: "blue",
-        }}
-        onClick={() => setpizzaOption(0)}
-      >
+    <div>
+      <Button className="filter-container" onClick={() => setpizzaOption(0)}>
         All
-      </button>
+      </Button>
       {"  "}
-      <button
-        style={{
-          width: "60px",
-          height: "35px",
-          background: "white",
-          color: "blue",
-          borderColor: "blue",
-        }}
-        onClick={() => setpizzaOption(1)}
-      >
+      <Button className="filter-Buttom" onClick={() => setpizzaOption(1)}>
         Pizzas
-      </button>
+      </Button>
       {"  "}
-      <button
-        style={{
-          width: "60px",
-          height: "35px",
-          background: "white",
-          color: "blue",
-          borderColor: "blue",
-        }}
-        onClick={() => setpizzaOption(2)}
-      >
+      <Button className="filter-Buttom" onClick={() => setpizzaOption(2)}>
         Drinks
-      </button>
+      </Button>
     </div>
   );
 }

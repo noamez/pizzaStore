@@ -22,13 +22,7 @@ function ContactUs() {
         Dimona Branch: +972 052-7567888 | 08-6559752<br></br>
       </Card.Title>
       <Figure>
-        <Figure.Image
-          src="images/phoneCall.jpg"
-          style={{
-            width: "55rem",
-            height: "25rem",
-          }}
-        />
+        <Figure.Image className="contact-image" src="images/phoneCall.jpg" />
       </Figure>
     </Card>
   );

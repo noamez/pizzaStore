@@ -21,17 +21,19 @@ function BranchesBox(Branch) {
             height: "18rem",
           }}
         />
-        <Card.Title>{currentBranch.name}</Card.Title>
+        <Card.Title>
+          <strong>{currentBranch.name}</strong>
+        </Card.Title>
         <Card.Body>
           <Card.Text>
-            Address:
+            <strong>Address: </strong>
             {currentBranch.Address}
             {"\n"}
           </Card.Text>
-          Operation days:
+          <strong> Operation days: </strong>
           {currentBranch.days}
           {"\n"}
-          Operation Hours:
+          <strong>Operation hours: </strong>
           {currentBranch.hours}
           {"\n"}
         </Card.Body>

@@ -41,11 +41,8 @@ function AboutUs() {
 
       <Figure>
         <Figure.Image
+          className="about-image"
           src="images/place.jpg"
-          style={{
-            width: "50rem",
-            height: "19rem",
-          }}
         ></Figure.Image>
       </Figure>
     </Card>
