@@ -37,7 +37,7 @@ function Menu(props) {
       />
       <Row xs={1} md={3} lg={4}>
         {filtered.map((pizza) => {
-          return <PizzaBox pizza={pizza} onAdd={onAdd} />;
+          return <PizzaBox key={pizza.id} pizza={pizza} onAdd={onAdd} />;
         })}
       </Row>
     </Container>

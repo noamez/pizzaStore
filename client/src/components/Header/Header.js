@@ -15,8 +15,13 @@ function Header(props) {
   const handleShow = () => setShow(true);
 
   return (
-    <Navbar>
-      <Nav defaultActiveKey="/Menu" as="ul" className="Home" navbarScroll>
+    <Navbar bg="danger" variant="dark">
+      <Nav
+        defaultActiveKey="/Menu"
+        as="ul"
+        className="me-auto my-2 my-lg-0"
+        navbarScroll
+      >
         <img
           src="https://img.freepik.com/premium-vector/pizza-logo-design_9845-319.jpg?w=2000"
           alt="logo"
@@ -25,98 +30,35 @@ function Header(props) {
           className="d-inline-block align-top"
         />{" "}
         <Nav.Item as="li">
-          <Nav.Link
-            style={{
-              color: "white",
-              height: "50px",
-              display: "flex",
-              fontSize: "25px",
-            }}
-            as={Link}
-            to={"/Menu"}
-          >
+          <Nav.Link as={Link} to={"/Menu"}>
             Menu
           </Nav.Link>
         </Nav.Item>
         <Nav.Item as="li">
-          <Nav.Link
-            style={{
-              color: "white",
-              height: "50px",
-              display: "flex",
-              fontSize: "25px",
-            }}
-            as={Link}
-            to={"/AboutUs"}
-          >
+          <Nav.Link as={Link} to={"/AboutUs"}>
             {" "}
             About
           </Nav.Link>
         </Nav.Item>
         <Nav.Item as="li">
-          <Nav.Link
-            style={{
-              color: "white",
-              height: "50px",
-              display: "flex",
-              fontSize: "25px",
-            }}
-            as={Link}
-            to={"/ContactUs"}
-          >
+          <Nav.Link as={Link} to={"/ContactUs"}>
             Contact
           </Nav.Link>
         </Nav.Item>
         <Nav.Item as="li">
-          <Nav.Link
-            style={{
-              color: "white",
-              height: "50px",
-              display: "flex",
-              fontSize: "25px",
-            }}
-            as={Link}
-            to={"/Branches"}
-          >
+          <Nav.Link as={Link} to={"/Branches"}>
             Branches
           </Nav.Link>
         </Nav.Item>
         <Nav.Item as="li">
-          <Nav.Link
-            style={{
-              color: "white",
-              height: "50px",
-              display: "flex",
-              fontSize: "25px",
-            }}
-            as={Link}
-            to={"/JoinUs"}
-          >
+          <Nav.Link as={Link} to={"/JoinUs"}>
             Join Us!
           </Nav.Link>
         </Nav.Item>
-        <Nav.Link
-          onClick={() => setCartOpen(true)}
-          style={{
-            color: "white",
-            height: "50px",
-            display: "flex",
-            fontSize: "25px",
-          }}
-        >
+        <Nav.Link onClick={() => setCartOpen(true)}>
           <FaShoppingCart style={{ marginTop: "5px" }} />
           {countCartItems ? (
-            <button
-              className="badge"
-              style={{
-                color: "blue",
-                height: "30px",
-                display: "flex",
-                width: "30px",
-              }}
-            >
-              {countCartItems}{" "}
-            </button>
+            <button className="badge">{countCartItems} </button>
           ) : (
             ""
           )}
@@ -251,16 +193,7 @@ function Header(props) {
           </Offcanvas>
         </Nav.Item>
         <Nav.Item as="li">
-          <Nav.Link
-            style={{
-              color: "white",
-              height: "50px",
-              display: "flex",
-              fontSize: "25px",
-            }}
-          >
-            Delivery hours: 10:00-22:00
-          </Nav.Link>
+          <Nav.Link> Delivery hours: 10:00-22:00</Nav.Link>
         </Nav.Item>
       </Nav>
     </Navbar>
