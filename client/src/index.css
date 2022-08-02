@@ -39,7 +39,6 @@ body {
 }
 .Home{
   background: red;
-  max-height: 100px;
   height: 50px;
   display: flex;
   font-weight: 200;
